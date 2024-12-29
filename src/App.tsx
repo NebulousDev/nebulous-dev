@@ -1,20 +1,33 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import ProfileCard from "./ProfileCard";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Landing from "./pages/landing";
+import Projects from "./pages/Projects";
+import ScrollToTop from "./components/ScrollToTop";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <> <ScrollToTop /> <Landing /> </>,
+  },
+  {
+    path: '/projects',
+    element: <> <ScrollToTop /> <Projects /> </>,
+  },
+  {
+    path: '/blog',
+    element: <> <ScrollToTop /> <Blog /> </>,
+  },
+  {
+    path: '/contact',
+    element: <> <ScrollToTop /> <Contact /> </>,
+  },
+]);
 
 export default function App() {
-  return (
+  return ( 
     <>
-      <Header showBg={false} showNav={false} z={10}/>
-      <Hero />
-      <Header showLogo={false} showLogin={false} z={20}/>
-      <div className="flex bg-zinc-950 justify-center">
-        <div className="w-full 2xl:w-[100rem] p-10">
-          <ProfileCard />
-          <ProfileCard />
-          <ProfileCard />
-        </div>
-      </div>
+      <RouterProvider router={router} />
     </>
   );
 }

@@ -5,3 +5,11 @@
 body {
     background: #000;
 }
+
+.top-header {
+    z-index: 0;
+}
+
+.bottom-header {
+    z-index: 20;
+}

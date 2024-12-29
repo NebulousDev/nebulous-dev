@@ -1,4 +1,4 @@
-import profile_image from "./assets/totoro_square.png";
+import profile_image from "../assets/totoro_square.png";
 
 export default function ProfileCard() {
   return (

@@ -1,4 +1,4 @@
-import bg_image from "./assets/temp-bg.png";
+import bg_image from "../assets/temp-bg.png";
 
 export default function Hero() {
     return (
