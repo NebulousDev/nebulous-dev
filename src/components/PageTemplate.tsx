@@ -1,3 +1,4 @@
+import Footer from './Footer'
 import Header from './Header'
 
 export default function PageTemplate({children} : any) {
@@ -9,6 +10,7 @@ export default function PageTemplate({children} : any) {
                 {children}
             </div>
         </div>
+        <Footer />
     </>
   )
 }
