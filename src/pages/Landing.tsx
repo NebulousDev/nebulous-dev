@@ -22,7 +22,7 @@ export default function Landing() {
         <div className="h-max hidden lg:block">
             <Header showBg={false} showNav={false} below={true} disableLogoLink={true}/>
             <Hero />
-            <Header showLogo={false} showLogin={false}/>
+            <Header showLogo={false} showLogin={false} disableAnim={true}/>
             {LangingInterior()}
             <Footer />
         </div>

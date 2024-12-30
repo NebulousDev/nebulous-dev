@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import profile_image from "../assets/totoro_square.png";
 
-export default function Header({isSticky=true, showBg=true, showLogo=true, showNav=true, showLogin=true, below=false, disableLogoLink=false}) {
+export default function Header({isSticky=true, showBg=true, showLogo=true, showNav=true, showLogin=true, below=false, disableLogoLink=false, disableAnim=false}) {
 
     return (
-        <nav className={`flex flex-row justify-center w-full p-2 ${isSticky ? 'sticky' : ''} top-0 h-[3.25rem] sm:h-[3.5rem] ${below ? 'z-20' : 'z-0'} ${showBg ? 'bg-black' : ''} pointer-events-none`}>
+        <nav className={`flex flex-row justify-center w-full p-2 ${isSticky ? 'sticky' : ''} top-0 h-[3.25rem] sm:h-[3.5rem] 
+            ${below ? 'z-20' : 'z-0'} ${showBg ? 'bg-[#000000aa]' : ''} pointer-events-none ${disableAnim ? '' : 'anim-open-move-down-100'}`}>
 
             {showLogo &&
             
@@ -22,7 +23,7 @@ export default function Header({isSticky=true, showBg=true, showLogo=true, showN
             {showNav &&
                 <>
                     <div className="basis-1/3 justify-self-center">
-                        <div className="w-[450px] grid grid-cols-3 w-full h-full space-x-2 hidden lg:flex">
+                        <div className="w-[450px] mx-auto grid grid-cols-3 h-full space-x-2 hidden lg:grid">
                             <Link to="/projects">
                                 <button className="w-full h-full bg-[#5297FF] hover:bg-[#82e0ff] rounded-xl hover:underline decoration-slate-100 decoration-2 pointer-events-auto">
                                     <h1 className="text-base sm:text-xl text-white font-mono px-6 sm:px-8 text-center">Projects</h1>
@@ -42,7 +43,7 @@ export default function Header({isSticky=true, showBg=true, showLogo=true, showN
                     </div>
 
                     <div className='order-first shrink-0 visible lg:hidden'>
-                        <img className="w-[35px] sm:w-[40px] h-[35px] sm:h-[40px]" src={profile_image}></img>
+                        <img className="w-[35px] sm:w-[40px] h-[35px] sm:h-[40px]" src={profile_image} />
                     </div>
                 </>
             }
