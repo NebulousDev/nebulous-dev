@@ -8,11 +8,11 @@ function LangingInterior()
     return (
         <div className="flex bg-zinc-950 justify-center">
             <div className="w-full 2xl:w-[100rem] p-5 sm:p-10">
-                <h1 className="text-white text-[36px] px-20">Who is NebulousDev?</h1>
+                <h1 className="text-white text-[36px] px-20 py-10">Who is NebulousDev?</h1>
                 <ProfileCard />
-                <h1 className="text-white text-[36px] px-20">What can I do?</h1>
+                <h1 className="text-white text-[36px] px-20 py-10">What can I do?</h1>
                 <ProfileCard />
-                <h1 className="text-white text-[36px] px-20">What have I done?</h1>
+                <h1 className="text-white text-[36px] px-20 py-10">What have I done?</h1>
                 <ProfileCard />
             </div>
         </div>

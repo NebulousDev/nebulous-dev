@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function ProfileCard() {
   return (
-    <div className="block lg:flex lg:flex-col-2 bg-zinc-800 rounded-xl text-center lg:text-left items-center p-5 lg:p-0">
+    <div className="block lg:flex lg:flex-col-2 bg-zinc-800 rounded-xl text-center lg:text-left items-center p-5 lg:p-0 lg:mx-10">
         <img className="w-[280px] h-[280px] rounded-none max-[1280px]:rounded-xl xl:rounded-r-xl order-1 xl:order-2 mx-auto lg:m-10 xl:m-0" src={profile_image}></img>
         <div className="order-2 xl:order-1 mr-5 xl:mx-10">
             <h1 className="font-mono text-white text-[24px] md:text-[36px] mt-5">Ben Ratcliff</h1>
