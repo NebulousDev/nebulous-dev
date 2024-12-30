@@ -1,10 +1,17 @@
 import { useLayoutEffect, useState } from "react";
 import bg_image from "../assets/temp-bg.png";
+import landings_text from "../assets/landings.txt"
 
 export default function Hero() {
     
     const [scrollY, setScrollY] = useState(0);
     
+    fetch(landings_text)
+    .then(r => r.text())
+    .then(text => {
+    console.log('text decoded:', text);
+    });
+
     useLayoutEffect(() => {
 
         const onScroll = () => {

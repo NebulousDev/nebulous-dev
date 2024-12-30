@@ -19,7 +19,7 @@ body {
 }
 
 .anim-pulse-10 {
-    animation: scale-pulse-10 60s linear infinite;
+    animation: scale-pulse-10 30s linear infinite;
 }
 
 .anim-scroll-move-down {
