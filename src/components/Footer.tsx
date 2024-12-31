@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Footer() {
   return (
     <div className='flex flex-row h-[200px] w-full justify-center content-center'>
