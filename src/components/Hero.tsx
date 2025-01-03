@@ -26,11 +26,11 @@ export default function Hero() {
     
     return (
         <>
-            <div className="w-full h-screen flex fixed top-0 anim-open-scale-down-20 -z-10">
+            <div className="w-full h-screen flex fixed top-0 left-0 m-auto anim-open-scale-down-20 -z-10">
                 <div style={{
-                    transform : `translateY(${scrollY * -0.1}%) scale(${100 + scrollY * 0.025 }%)`
+                    transform : `origin-center translateY(${scrollY * -0.1}%) scale(${100 + scrollY * 0.025 }%)`
                 }}>
-                    <img className="object-cover object-center w-full h-full anim-pulse-10" src={bg_image} />
+                    <img className="absolute object-cover object-center origin-center w-full h-full m-auto anim-pulse-10" src={bg_image} />
                 </div>
             </div>
             <div className="w-full h-[calc(100vh-6.5rem)] sm:h-[calc(100vh-3.5rem)] text-center flex items-center justify-center">
