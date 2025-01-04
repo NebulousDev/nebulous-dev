@@ -91,9 +91,9 @@ export default function SkillsCard() {
                     <SkillItem skillName="NodeJS" imgPath={node_image} linkPath="https://nodejs.org/"/>
                     <SkillItem skillName="React" imgPath={react_image} linkPath="https://react.dev/"/>
                     <SkillItem skillName="Vite" imgPath={vite_image} linkPath="https://vite.dev/"/>
+                    <SkillItem skillName="Tailwind" imgPath={tailwind_image} linkPath="https://tailwindcss.com/"/>
                     <SkillItem skillName="HTML" imgPath={html_image} linkPath="https://en.wikipedia.org/wiki/HTML"/>
                     <SkillItem skillName="CSS" imgPath={css_image} linkPath="https://en.wikipedia.org/wiki/CSS"/>
-                    <SkillItem skillName="Tailwind" imgPath={tailwind_image} linkPath="https://tailwindcss.com/"/>
                     <SkillItem skillName="JSON" imgPath={json_image} linkPath="https://www.json.org/json-en.html" extraImgClass="p-2 object-scale-down"/>
                     <SkillItem skillName="MySQL" imgPath={mysql_image} linkPath="https://www.mysql.com/"/>
                     <SkillItem skillName="Bash" imgPath={bash_image} linkPath="https://en.wikipedia.org/wiki/Bash_(Unix_shell)"/>

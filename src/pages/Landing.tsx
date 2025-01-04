@@ -13,8 +13,6 @@ function LandingInterior()
                 <ProfileCard />
                 <h1 className="text-white text-[36px] py-10"></h1>
                 <SkillsCard />
-                <h1 className="text-white text-[36px] px-20 py-10"></h1>
-                <ProfileCard />
             </div>
         </div>
     )

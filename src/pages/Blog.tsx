@@ -1,13 +1,9 @@
 import PageTemplate from "../components/PageTemplate";
-import ProfileCard from "../components/ProfileCard";
 
 export default function Blog() {
   return (
     <PageTemplate>
-      <h1 className="w-full text-white text-[100px] text-center">Blog</h1>
-      <ProfileCard />
-      <ProfileCard />
-      <ProfileCard />
+      <h1 className="w-full text-white text-[36px] md:text-[100px] text-center">Coming Soon!</h1>
     </PageTemplate>
   )
 }
