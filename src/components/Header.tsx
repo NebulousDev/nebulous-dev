@@ -24,7 +24,7 @@ function NavMenu()
     );
 }
 
-export default function Header({isSticky=true, showBg=true, showLogo=true, showNav=true, showLogin=true, below=false, disableLogoLink=false, disableAnim=false, highZ=false}) {
+export default function Header({isSticky=true, showBg=true, showLogo=true, showNav=true, showLogin=true, disableLogoLink=false, disableAnim=false, highZ=false}) {
 
     const [isNavMenuOpen, setNavMenuOpen] = useState(false);
 
@@ -34,8 +34,8 @@ export default function Header({isSticky=true, showBg=true, showLogo=true, showN
     }
 
     return (
-        <nav className={`flex flex-row justify-center w-full p-2 ${isSticky ? 'sticky' : ''} ${highZ? 'z-20' : 'z-10'} top-0 h-[3.25rem] sm:h-[3.5rem] 
-            ${below ? 'z-20' : 'z-0'} ${showBg ? 'bg-[#000000aa]' : ''} pointer-events-none ${disableAnim ? '' : 'anim-open-move-down-100'}`}>
+        <nav className={`flex flex-row justify-center w-full p-2 ${isSticky ? 'sticky' : ''} ${highZ? 'z-20' : 'z-10'} top-0 h-[3.25rem] sm:h-[3.55rem] 
+            ${showBg ? 'bg-[#000000aa]' : ''} pointer-events-none ${disableAnim ? '' : 'anim-open-move-down-100'}`}>
 
             {showLogo &&
             
@@ -53,7 +53,7 @@ export default function Header({isSticky=true, showBg=true, showLogo=true, showN
             {showNav &&
                 <>
                     <div className="basis-1/3 justify-self-center">
-                        <div className="w-[450px] mx-auto grid grid-cols-3 h-full space-x-2 hidden">
+                        <div className="w-[450px] mx-auto grid grid-cols-3 h-full space-x-2 hidden lg:grid">
                             <FadeButton linkPath="/projects">
                                 <h1 className="text-base sm:text-xl text-white font-mono text-center">Projects</h1>
                             </FadeButton>

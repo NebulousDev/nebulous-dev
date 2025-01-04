@@ -22,7 +22,7 @@ export default function Landing() {
   return (
     <>
         <div className="h-max hidden lg:block">
-            <Header showBg={false} showNav={false} below={true} disableLogoLink={true} highZ={true}/>
+            <Header showBg={false} showNav={false} disableLogoLink={true} highZ={true}/>
             <Hero />
             <Header showLogo={false} showLogin={false} disableAnim={true}/>
             {LandingInterior()}
