@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { useIsVisible } from './Visibility';
 
-import code_image from "../assets/icons8-source-code-96.png"
-
 import c_image from "../assets/icons8-c-programming.svg"
 import cpp_image from "../assets/icons8-c++.svg"
 import csharp_image from "../assets/C-CSharp.svg"

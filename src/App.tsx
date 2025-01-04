@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Landing from "./pages/landing";
+import Landing from "./pages/Landing";
 import Projects from "./pages/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import Blog from "./pages/Blog";
