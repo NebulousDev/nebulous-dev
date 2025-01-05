@@ -13,16 +13,16 @@ function NavMenu()
         <div ref={ref1} className={`absolute left-0 top-[3.25rem] sm:top-[3.55rem] w-full sm:w-[400px] h-fit bg-zinc-950 sm:bg-[#000000aa] sm:rounded-br-xl transition-all duration-150 ${isVisible ? 'opacity-100 translate-y-[0%]' : 'opacity-0 -translate-y-[100%]'}`}>
             <div className="basis-1/3 justify-self-center p-5 w-full">
                 <div className="w-full mx-auto grid grid-rows-3 h-full gap-2">
-                    <FadeButton extraClass="h-[3.0rem]" linkPath="/">
+                    <FadeButton height="h-[3.0rem]" linkPath="/">
                         <h1 className="text-base sm:text-xl text-white font-mono text-center h-full">Home</h1>
                     </FadeButton>
-                    <FadeButton extraClass="h-[3.0rem]" linkPath="/projects">
+                    <FadeButton height="h-[3.0rem]" linkPath="/projects">
                         <h1 className="text-base sm:text-xl text-white font-mono text-center h-full">Projects</h1>
                     </FadeButton>
-                    <FadeButton extraClass="h-[3.0rem]" linkPath="/blog">
+                    <FadeButton height="h-[3.0rem]" linkPath="/blog">
                         <h1 className="text-base sm:text-xl text-white font-mono text-center h-full">Blog</h1>
                     </FadeButton>
-                    <FadeButton extraClass="h-[3.0rem]" linkPath="/contact">
+                    <FadeButton height="h-[3.0rem]" linkPath="/contact">
                         <h1 className="text-base sm:text-xl text-white font-mono text-center h-full">Contact</h1>
                     </FadeButton>
                 </div>

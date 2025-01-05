@@ -89,7 +89,7 @@ export default function SkillsCard() {
             <h1 className="w-full font-mono text-[24px] sm:text-[30px] text-white text-center p-2 sm:p-5">Code Skills</h1>
             <div className="w-full flex flex-col justify-between justify-items-center items-center bg-zinc-transparent h-min p-2">
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Software & Scripting Languages: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Languages I have used for full projects </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Languages used in full projects </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="C" imgPath={c_image} linkPath="https://en.wikipedia.org/wiki/C_(programming_language)"/>
                     <SkillItem skillName="C++" imgPath={cpp_image} linkPath="https://en.wikipedia.org/wiki/C%2B%2B"/>
@@ -103,7 +103,7 @@ export default function SkillsCard() {
                     <SkillItem skillName="CSS" imgPath={css_image} linkPath="https://en.wikipedia.org/wiki/CSS"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Frameworks & Libraries: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Libraries I have used for full projects </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Libraries used in full projects </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="OpenGL" imgPath={opengl_image} linkPath="https://www.opengl.org/"/>
                     <SkillItem skillName="Vulkan" imgPath={vulkan_image} linkPath="https://www.vulkan.org/"/>
@@ -115,7 +115,7 @@ export default function SkillsCard() {
                     <SkillItem skillName="Tailwind" imgPath={tailwind_image} linkPath="https://tailwindcss.com/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Containers: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Containers I have written parsers for </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Containers I have written parsers for </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 pb-10 px-2 lg:px-0">
                     <SkillItem skillName="JSON" imgPath={json_image} linkPath="https://www.json.org/json-en.html" extraImgClass="p-2 object-scale-down"/>
                     <SkillItem skillName="XML" imgPath={xml_image} linkPath="https://en.wikipedia.org/wiki/XML"/>
@@ -127,7 +127,7 @@ export default function SkillsCard() {
             <h1 className="w-full font-mono text-[24px] sm:text-[30px] text-white text-center p-2 sm:p-5">Tools Skills</h1>
             <div className="w-full flex flex-col justify-between justify-items-center items-center bg-zinc-transparent h-min p-2">
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Build & Repository: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Build systems, deployment, and code management tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Build systems, deployment, and code management tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="CMake" imgPath={cmake_image} linkPath="https://cmake.org/"/>
                     <SkillItem skillName="Gradle" imgPath={gradle_image} linkPath="https://gradle.org/"/>
@@ -137,14 +137,14 @@ export default function SkillsCard() {
                     <SkillItem skillName="Digital Ocean" imgPath={digital_ocean_image} linkPath="https://www.digitalocean.com/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Development Environments (IDEs): </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Integrated development environments </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Integrated development environments </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="Visual Studio" imgPath={visual_studio_image} linkPath="https://visualstudio.microsoft.com/"/>
                     <SkillItem skillName="Visual Code" imgPath={visual_code_image} linkPath="https://code.visualstudio.com/"/>
                     <SkillItem skillName="Eclipse" imgPath={eclipse_image} linkPath="https://eclipseide.org/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> IT / Server: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Server and network software tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Server and network software tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="TrueNAS" imgPath={truenas_image} linkPath="https://www.truenas.com/"/>
                     <SkillItem skillName="Proxmox" imgPath={proxmox_image} linkPath="https://www.proxmox.com/en/"/>
@@ -153,7 +153,7 @@ export default function SkillsCard() {
                     <SkillItem skillName="WireGuard" imgPath={wireguard_image} linkPath="https://www.wireguard.com/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> General: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Operating systems and other development-adjacent tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Operating systems and other development-adjacent tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 pb-10 px-2 lg:px-0">
                     <SkillItem skillName="Windows" imgPath={windows_image} linkPath="https://www.microsoft.com/en-us/windows"/>
                     <SkillItem skillName="GNU/Linix" imgPath={linux_image} linkPath="https://www.linux.org/"/>
@@ -166,7 +166,7 @@ export default function SkillsCard() {
             <h1 className="w-full font-mono text-[24px] sm:text-[30px] text-white text-center p-2 sm:p-5">Additional Skills</h1>
             <div className="w-full flex flex-col justify-between justify-items-center items-center bg-zinc-transparent h-min p-2">
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Graphics / Game Development: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Computer graphics, game development, and design tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Computer graphics, game development, and design tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="Unity" imgPath={unity_image} linkPath="https://unity.com/"/>
                     <SkillItem skillName="Blender" imgPath={blender_image} linkPath="https://www.blender.org/"/>
@@ -174,7 +174,7 @@ export default function SkillsCard() {
                     <SkillItem skillName="Figma" imgPath={figma_image} linkPath="https://www.figma.com/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> AV Editing: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Video, audio, and restoration tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Video, audio, and restoration tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 px-2 lg:px-0">
                     <SkillItem skillName="DaVinci Resolve" imgPath={davinci_resolve_image} linkPath="https://www.blackmagicdesign.com/products/davinciresolve"/>
                     <SkillItem skillName="OBS" imgPath={obs_image} linkPath="https://obsproject.com/"/>
@@ -185,7 +185,7 @@ export default function SkillsCard() {
                     <SkillItem skillName="FFmpeg" imgPath={ffmpeg_image} linkPath="https://www.ffmpeg.org/"/>
                 </div>
                 <h2 className="w-full text-white text-center text-[24px] mt-5"> Workplace: </h2>
-                <h3 className="w-full text-zinc-300 text-center text-[18px] mt-2"> Word processing and professional workplace tools </h3>
+                <h3 className="w-full text-zinc-300 text-center text-[16px] mt-2"> Word processing and professional workplace tools </h3>
                 <div className="w-fit grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 xl:grid-cols-9 gap-2 pt-10 pb-10 px-2 lg:px-0">
                     <SkillItem skillName="Google Workspace" imgPath={google_image} linkPath="https://workspace.google.com/"/>
                     <SkillItem skillName="Microsoft Office" imgPath={office_image} linkPath="https://www.office.com/"/>
