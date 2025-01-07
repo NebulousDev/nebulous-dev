@@ -13,7 +13,6 @@ function NavMenu({styleMode, setStyleMode}: any)
     let bgStyle = "";
     let textStyle = "";
     let textSmallStyle = "";
-    let textButtonStyle = "";
         
     switch(styleMode)
     {
@@ -21,13 +20,11 @@ function NavMenu({styleMode, setStyleMode}: any)
             bgStyle = "bg-gradient-to-br from-[#1e293bea] to-[#09090bea]"; 
             textStyle = "font-mono text-white";
             textSmallStyle = "text-slate-400";
-            textButtonStyle = "text-white fill-white";
             break;
         case StyleMode.LIGHT_MODE:
             bgStyle = "bg-gradient-to-br from-zinc-100 to-zinc-100";
             textStyle = "font-mono text-black";
             textSmallStyle = "text-gray-400";
-            textButtonStyle = "text-black fill-black";
             break;
     }
     

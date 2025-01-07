@@ -9,17 +9,14 @@ export default function FadeButton({styleMode, linkPath="/", width="w-full", hei
     const isVisible : boolean = useIsVisible(ref1);
 
     let bgStyle = "";
-    let fadeStyle = "";
     
     switch(styleMode)
     {
         case StyleMode.DARK_MODE:
             bgStyle = "bg-slate-800"; 
-            fadeStyle = "font-mono text-white";
             break;
         case StyleMode.LIGHT_MODE:
             bgStyle = "bg-zinc-200";
-            fadeStyle = "font-mono text-black";
             break;
     }
 
