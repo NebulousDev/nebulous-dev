@@ -1,4 +1,4 @@
-import { SVGBluesky, SVGEnvelope, SVGGithub, SVGHouse } from "./Icons";
+import { SVGBluesky, SVGEnvelope, SVGHouse } from "./Icons";
 import FadeButton from "./FadeButton";
 import { useRef } from "react";
 import { useIsVisible } from "./Visibility";

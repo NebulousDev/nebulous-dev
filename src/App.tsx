@@ -18,15 +18,15 @@ export default function App() {
         },
         {
             path: '/projects',
-            element: <> <ScrollToTop /> <Projects /> </>,
+            element: <> <ScrollToTop /> <Projects styleMode={styleMode} setStyleMode={setStyleMode} /> </>,
         },
         {
             path: '/blog',
-            element: <> <ScrollToTop /> <Blog /> </>,
+            element: <> <ScrollToTop /> <Blog styleMode={styleMode} setStyleMode={setStyleMode} /> </>,
         },
         {
             path: '/contact',
-            element: <> <ScrollToTop /> <Contact /> </>,
+            element: <> <ScrollToTop /> <Contact styleMode={styleMode} setStyleMode={setStyleMode} /> </>,
         },
     ]);
 
