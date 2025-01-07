@@ -38,16 +38,16 @@ export default function ProfileCard({styleMode}: any) {
             <p className={`${textStyle} text-[16px] my-5`}>I am a software developer with over a decade of personal experience and an insatiable desire to solve problems.</p>
             <div className="flex-auto h-[20px] xl:h-[40px]"></div>
             <div className="flex flex-row flex-wrap place-content-around gap-2 justify-center lg:justify-normal mb-5 lg:mb-10">
-              <FadeButton styleMode={styleMode} linkPath="https://nebulous.dev/" extraClass="px-2 py-1">
+              <FadeButton styleMode={styleMode} linkPath="https://nebulous.dev/" extraInnerClass="px-2 py-1">
                 <SVGHouse className={`${textButtonStyle} w-5 mr-1 inline`} /><a className={`${textButtonStyle} p-1 align-text-top`}>nebulous.dev</a>
               </FadeButton>
-              <FadeButton styleMode={styleMode} linkPath="https://github.com/NebulousDev" extraClass="px-2 py-1">
+              <FadeButton styleMode={styleMode} linkPath="https://github.com/NebulousDev" extraInnerClass="px-2 py-1">
                 <SVGHouse className={`${textButtonStyle} w-5 mr-1 inline`} /><a className={`${textButtonStyle} p-1 align-text-top`}>NebulousDev</a>
                 </FadeButton>
-              <FadeButton styleMode={styleMode} linkPath="https://bsky.app/profile/nebulous.dev" extraClass="px-2 py-1">
+              <FadeButton styleMode={styleMode} linkPath="https://bsky.app/profile/nebulous.dev" extraInnerClass="px-2 py-1">
                 <SVGBluesky className={`${textButtonStyle} w-5 mr-1 inline`} /><a className={`${textButtonStyle} p-1 align-text-top`}>@nebulous.dev</a>
               </FadeButton>
-              <FadeButton styleMode={styleMode} linkPath="mailto:ben@nebulous.dev" extraClass="px-2 py-1">
+              <FadeButton styleMode={styleMode} linkPath="mailto:ben@nebulous.dev" extraInnerClass="px-2 py-1">
                 <SVGEnvelope className={`${textButtonStyle} w-5 mr-1 inline`} /><a className={`${textButtonStyle} p-1 align-text-top`}>ben@nebulous.dev</a>
               </FadeButton>
             </div>
