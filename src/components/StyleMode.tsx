@@ -5,7 +5,7 @@ export enum StyleMode {
     LIGHT_MODE
 }
 
-export default function StyleModeButton({styleMode, setStyleMode}: any){
+export default function StyleModeButton({styleMode, setStyleMode, extraClass=""}: any){
 
     function toggleDarkMode()
     {
@@ -37,7 +37,7 @@ export default function StyleModeButton({styleMode, setStyleMode}: any){
     }
 
     return (
-        <div className={`w-[80px] h-[40px] pointer-events-auto z-10`}>
+        <div className={`w-[80px] h-[40px] pointer-events-auto z-10 ${extraClass}`}>
             <button className={`group relative w-full h-full ${bgStyle} rounded-full`} onClick={toggleDarkMode}>
                 <div className={`absolute top-[5px] left-[5px] w-[30px] h-[30px] rounded-full ${bgCircleStyle} transform-all duration-200 ${offsetCircleStyle}`}/>
                 <SVGMoon className={`absolute top-[8px] left-[9px] w-[25px] h-[25px] ${fillMoonStyle}`}/>
