@@ -16,7 +16,8 @@ export default {
       colors: {
         'nebdev': '#5297FF',
         'deep' : '#1D1957',
-        'zinc-transparent' :'rgba(9, 9, 11, 0.33)'
+        'zinc-dark-transparent' :'rgba(9, 9, 11, 0.33)',
+        'zinc-light-transparent' :'rgba(248, 248, 248, 0.68)'
       }
     }
   },

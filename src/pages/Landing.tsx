@@ -3,36 +3,49 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ProfileCard from "../components/ProfileCard";
 import SkillsCard from "../components/SkillsCard";
+import { StyleMode } from "../components/StyleMode";
 
-function LandingInterior()
+function LandingInterior(styleMode: StyleMode)
 {
+    let bgStyle = "";
+
+    switch(styleMode)
+    {
+        case StyleMode.DARK_MODE:
+            bgStyle = "bg-gradient-to-t from-black to-zinc-950";
+            break;
+        case StyleMode.LIGHT_MODE:
+            bgStyle = "bg-gray-200";
+            break;
+    }
+
     return (
-        <div className="flex bg-gradient-to-br from-zinc-950 to-black justify-center">
+        <div className={`flex flex-col w-full place-items-center ${bgStyle} justify-center`}>
             <div className="w-full 2xl:w-[100rem] p-5 sm:p-10">
-                <h1 className="text-white text-[36px] px-20 py-2"></h1>
-                <ProfileCard />
+                <h1 className="text-white text-[36px] py-2"></h1>
+                <ProfileCard styleMode={styleMode} />
                 <h1 className="text-white text-[36px] py-5"></h1>
-                <SkillsCard />
+                <SkillsCard styleMode={styleMode} />
             </div>
         </div>
     )
 }
 
-export default function Landing() {
+export default function Landing({styleMode, setStyleMode}: any) {
   return (
     <>
         <div className="h-max hidden lg:block">
-            <Header showBg={false} showNav={false} disableLogoLink={true} highZ={true}/>
+            <Header styleMode={styleMode} setStyleMode={setStyleMode} showBg={false} showNav={false} showMode={true} disableLogoLink={true} highZ={true}/>
             <Hero />
-            <Header showLogo={false} showLogin={false} disableAnim={true}/>
-            {LandingInterior()}
+            <Header styleMode={styleMode} setStyleMode={setStyleMode} showLogo={false} showLogin={false} showMode={false} disableAnim={true}/>
+            {LandingInterior(styleMode)}
             <Footer />
         </div>
         
         <div className="h-max block lg:hidden">
-            <Header disableLogoLink={true}/>
+            <Header styleMode={styleMode} setStyleMode={setStyleMode} disableLogoLink={true}/>
             <Hero />
-            {LandingInterior()}
+            {LandingInterior(styleMode)}
             <Footer />
         </div>
     </>

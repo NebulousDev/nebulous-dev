@@ -4,30 +4,35 @@ import Projects from "./pages/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <> <ScrollToTop /> <Landing /> </>,
-  },
-  {
-    path: '/projects',
-    element: <> <ScrollToTop /> <Projects /> </>,
-  },
-  {
-    path: '/blog',
-    element: <> <ScrollToTop /> <Blog /> </>,
-  },
-  {
-    path: '/contact',
-    element: <> <ScrollToTop /> <Contact /> </>,
-  },
-]);
+import { StyleMode } from "./components/StyleMode";
+import { useState } from "react";
 
 export default function App() {
-  return ( 
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+
+    const [styleMode, setStyleMode] = useState<StyleMode>(StyleMode.DARK_MODE);
+
+    const router = createBrowserRouter([
+        {
+            path: '/',
+            element: <> <ScrollToTop /> <Landing styleMode={styleMode} setStyleMode={setStyleMode} /> </>,
+        },
+        {
+            path: '/projects',
+            element: <> <ScrollToTop /> <Projects /> </>,
+        },
+        {
+            path: '/blog',
+            element: <> <ScrollToTop /> <Blog /> </>,
+        },
+        {
+            path: '/contact',
+            element: <> <ScrollToTop /> <Contact /> </>,
+        },
+    ]);
+
+    return ( 
+        <>
+            <RouterProvider router={router} />
+        </>
+    );
 }
