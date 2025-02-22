@@ -24,7 +24,7 @@ export default function PageTemplate({styleMode, setStyleMode, children} : any) 
             {children}
           </div>
         </div>
-      <Footer />
+      <Footer styleMode={styleMode} />
     </>
   )
 }

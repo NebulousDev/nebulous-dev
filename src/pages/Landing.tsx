@@ -39,14 +39,14 @@ export default function Landing({styleMode, setStyleMode}: any) {
             <Hero />
             <Header styleMode={styleMode} setStyleMode={setStyleMode} showLogo={false} showLogin={false} showMode={false} disableAnim={true}/>
             {LandingInterior(styleMode)}
-            <Footer />
+            <Footer styleMode={styleMode}/>
         </div>
         
         <div className="h-max block lg:hidden">
             <Header styleMode={styleMode} setStyleMode={setStyleMode} disableLogoLink={true}/>
             <Hero />
             {LandingInterior(styleMode)}
-            <Footer />
+            <Footer styleMode={styleMode}/>
         </div>
     </>
   )
